@@ -1,0 +1,178 @@
+:root{
+    --hover-colour:#750E21;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.1);
+}
+.search-bar{
+    width:40%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.search-icon{
+    position: absolute;
+    left: 8%;
+    top:11px;
+}
+.search-input{
+    width: 80%;
+    padding: 12px;
+    padding-left: 50px;
+    border: 0;
+    border-radius: 5px;
+
+}
+.search-input:focus{
+    outline: none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+
+}
+.navelements{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.navelements li{
+    margin-right: 50px;
+}
+.navelements a{
+    text-decoration: none;
+    color: black;
+    padding-bottom: 2px;
+}
+.navelements a:hover{
+    color: var(--hover-colour);
+    border-bottom: 1px solid var(--hover-colour);
+}
+.visited{
+    color: var(--hover-colour);
+    border-bottom: 1px solid var(--hover-colour);
+}
+
+/*main-section*/
+.main-section{
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-image{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-image img{
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+  
+}
+.product-details{
+    border-left: 10px solid black;
+    width: 40%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.detail-container{
+    height: 70%;
+    width: 100%;
+    line-height: 1.6;
+    padding: 20px;
+}
+.price{
+    text-decoration: line-through;
+}
+.line{
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin: 1rem 0;
+}
+.colors{
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    align-items: center;
+}
+.color{
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+.color:hover{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    transform: scale(0.9);
+}
+.colorAll{
+    cursor: pointer;
+}
+.red{
+    background-color: red;
+}
+.black{
+    background-color: black;
+}
+.blue{
+    background-color: lightblue;
+}
+.grey{
+    background-color: grey;
+}
+
+.add-to-cart{
+    display: flex;
+    
+    align-items: center;
+    margin-top: 10px;
+}
+.quantity{
+    border: 1px solid black;
+    margin: 0 10px;
+    padding:0  20px;
+    border-radius: 20px;
+    width: 10%;text-align: center;
+}
+.increment:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+
+}
+.decrement:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+
+}
+.btn{
+    padding: 10px 5px;
+    color: white;
+    background-color: #750E21;
+    font-size: small;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 15px;
+}
+.btn:hover{
+    cursor: pointer;
+    transform: scale(0.99);
+    
+}
